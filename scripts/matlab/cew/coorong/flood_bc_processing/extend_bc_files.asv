@@ -1,0 +1,36 @@
+clear all; close all;
+
+[snum,sstr] = xlsread('DailyBarrageFlows_2019.csv','A2:G20000');
+
+bar.Date = datenum(sstr(:,1),'dd/mm/yyyy');
+bar.Tauwitchere = snum(:,6) * (1000/86400);
+bar.Ewe = snum(:,5) * (1000/86400);
+bar.Boundary = snum(:,4) * (1000/86400);
+bar.Mundoo = snum(:,3) * (1000/86400);
+bar.Goolwa = snum(:,2) * (1000/86400);
+
+dirlist = dir(['BC_Old/','*.csv']);
+
+for i = 1:length(dirlist)
+    
+    filename = dirlist(i).name;
+    newfile = regexprep(filename,'_2017','_v3');
+    
+    
+    old = tfv_readBCfile(['BC_Old/',filename]);
+    new = tfv_readBCfile(['BC_New/',filename]);
+    
+    vars = fieldnames(old);
+    
+    sss = find(new.Date > old.Date(end));
+    
+    theflow
+    
+    
+    
+    
+    
+    
+
+
+

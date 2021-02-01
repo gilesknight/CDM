@@ -1,0 +1,104 @@
+!TIME COMMANDS
+!_________________________________________________________________
+lagrangian timestep == 60.0   ! seconds
+eulerian timestep == 60.0     ! seconds
+!PARTICLE GROUP COMMANDS
+!_________________________________________________________________
+Nscalar == 1
+group == fb
+!initial scalar mass == 1.0
+initial scalar mass == 50
+settling model == none 
+settling parameters == 0.00
+horizontal dispersion model == constant
+horizontal dispersion parameters == 1.0
+vertical dispersion model == none!HD model 
+vertical dispersion parameters == 1.0
+erosion model == none 
+erosion parameters == 0.02, 0.2, 1.0
+deposition model == none 
+deposition parameters == 0.2
+end group
+!MATERIAL SPECS COMMANDS
+!_________________________________________________________________
+material == 1
+ks == 0.001
+Nlayer == 1
+layer == 1
+rhodry == 800.
+end layer
+end material
+!INITIAL CONDITION COMMANDS
+!_________________________________________________________________
+!restart file == ../input/log/corner_ptm_005_ptm.rst
+!BOUNDARY CONDITION COMMANDS
+!_________________________________________________________________
+
+bc == ptm_source, 348368.1977,6136706.6170,0. , PTM/f1.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372580.1890,6161113.7567,0. , PTM/f2.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368858.5591,6181345.6899,0. , PTM/f3.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368559.9455,6137056.6416,0. , PTM/f4.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370507.4017,6174478.9333,0. , PTM/f5.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371183.5228,6174236.2120,0. , PTM/f6.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367805.6946,6137765.0563,0. , PTM/f7.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367305.0345,6148487.0771,0. , PTM/f8.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348152.1652,6104522.0728,0. , PTM/f9.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+output dir == ../Output_PTM/ 
+output == ptm_netcdf 
+output groups == fb 
+output interval == 300 
+output compression == 1 
+end output 

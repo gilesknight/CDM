@@ -1,0 +1,3541 @@
+!TIME COMMANDS
+!_________________________________________________________________
+lagrangian timestep == 60.0   ! seconds
+eulerian timestep == 60.0     ! seconds
+!PARTICLE GROUP COMMANDS
+!_________________________________________________________________
+Nscalar == 1
+group == fb
+!initial scalar mass == 1.0
+initial scalar mass == 50
+settling model == none 
+settling parameters == 0.00
+horizontal dispersion model == constant
+horizontal dispersion parameters == 1.0
+vertical dispersion model == none!HD model 
+vertical dispersion parameters == 1.0
+erosion model == none 
+erosion parameters == 0.02, 0.2, 1.0
+deposition model == none 
+deposition parameters == 0.2
+end group
+!MATERIAL SPECS COMMANDS
+!_________________________________________________________________
+material == 1
+ks == 0.001
+Nlayer == 1
+layer == 1
+rhodry == 800.
+end layer
+end material
+!INITIAL CONDITION COMMANDS
+!_________________________________________________________________
+!restart file == ../input/log/corner_ptm_005_ptm.rst
+!BOUNDARY CONDITION COMMANDS
+!_________________________________________________________________
+
+bc == ptm_source, 350188.1813,6120711.3087,0. , PTM/f1.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353008.8507,6089576.4288,0. , PTM/f2.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350362.4143,6122074.8326,0. , PTM/f3.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350335.2114,6138650.3711,0. , PTM/f4.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347193.9479,6107991.1346,0. , PTM/f5.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348793.2199,6137662.7495,0. , PTM/f6.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353621.0261,6087928.6173,0. , PTM/f7.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368679.5845,6157246.6478,0. , PTM/f8.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347111.7149,6130349.9923,0. , PTM/f9.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347127.8099,6107979.6390,0. , PTM/f10.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372787.1566,6176295.0046,0. , PTM/f11.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343850.8477,6112376.9233,0. , PTM/f12.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367864.8176,6153746.4499,0. , PTM/f13.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373223.7794,6197472.0102,0. , PTM/f14.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370042.6160,6143889.6518,0. , PTM/f15.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346012.4953,6105958.0800,0. , PTM/f16.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376309.7057,6167537.0833,0. , PTM/f17.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345151.8947,6115262.0667,0. , PTM/f18.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 363156.2834,6140288.6611,0. , PTM/f19.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346162.7146,6135306.4225,0. , PTM/f20.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 354107.5637,6092345.1164,0. , PTM/f21.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370229.5811,6144250.8021,0. , PTM/f22.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371358.2768,6143708.7662,0. , PTM/f23.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343521.6930,6112453.1183,0. , PTM/f24.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 354813.7505,6092601.1258,0. , PTM/f25.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367592.1510,6140034.4467,0. , PTM/f26.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 362136.2327,6140297.1006,0. , PTM/f27.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348170.3457,6120154.5600,0. , PTM/f28.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 351526.7686,6139810.9418,0. , PTM/f29.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368282.7200,6147024.7523,0. , PTM/f30.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372363.5350,6174920.2721,0. , PTM/f31.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372476.5466,6137817.7008,0. , PTM/f32.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370266.9303,6136764.2667,0. , PTM/f33.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370940.3789,6172995.1339,0. , PTM/f34.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349900.3213,6119635.6125,0. , PTM/f35.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347247.0062,6104724.8545,0. , PTM/f36.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347858.4885,6104593.3615,0. , PTM/f37.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349360.9357,6104384.8956,0. , PTM/f38.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350365.4469,6122698.0220,0. , PTM/f39.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371116.0304,6172021.0118,0. , PTM/f40.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373662.8599,6141929.1182,0. , PTM/f41.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349653.9583,6124602.5533,0. , PTM/f42.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 341644.2363,6130378.7364,0. , PTM/f43.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372409.9359,6168528.0179,0. , PTM/f44.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370807.8855,6160244.1888,0. , PTM/f45.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371202.6114,6177507.1071,0. , PTM/f46.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377729.9750,6166604.8754,0. , PTM/f47.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372041.5961,6160932.7115,0. , PTM/f48.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350863.9894,6139191.7388,0. , PTM/f49.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348808.5677,6126395.1528,0. , PTM/f50.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353471.9510,6087439.0459,0. , PTM/f51.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375192.9763,6167132.7931,0. , PTM/f52.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359577.5972,6141350.2752,0. , PTM/f53.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376012.4411,6163431.5048,0. , PTM/f54.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376285.7355,6168010.0231,0. , PTM/f55.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346369.5487,6105252.4700,0. , PTM/f56.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347990.3000,6104500.5821,0. , PTM/f57.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349074.9729,6126478.7452,0. , PTM/f58.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 355682.4144,6141433.6659,0. , PTM/f59.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350456.7930,6123253.1867,0. , PTM/f60.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353676.4319,6092193.4748,0. , PTM/f61.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347525.6988,6128992.3514,0. , PTM/f62.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353370.2585,6086946.3057,0. , PTM/f63.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369311.5037,6152254.4087,0. , PTM/f64.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346202.9284,6116831.3759,0. , PTM/f65.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343732.5114,6112240.6292,0. , PTM/f66.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376103.5932,6162070.4584,0. , PTM/f67.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372710.3152,6166241.7139,0. , PTM/f68.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346644.8079,6119770.9068,0. , PTM/f69.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348374.4937,6126099.2266,0. , PTM/f70.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367752.8629,6139337.3115,0. , PTM/f71.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370156.0930,6158855.1100,0. , PTM/f72.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359510.2447,6096828.6895,0. , PTM/f73.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370893.8452,6178586.7370,0. , PTM/f74.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345260.0041,6133313.2601,0. , PTM/f75.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348841.4110,6126230.1733,0. , PTM/f76.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348293.9602,6126242.4841,0. , PTM/f77.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350489.9726,6122128.3750,0. , PTM/f78.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359443.6043,6094829.2536,0. , PTM/f79.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 358351.8148,6141906.2443,0. , PTM/f80.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370224.5876,6173693.2450,0. , PTM/f81.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367353.5512,6148797.4774,0. , PTM/f82.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344938.6983,6132658.5259,0. , PTM/f83.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368279.2603,6137215.4533,0. , PTM/f84.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345014.8413,6109968.8500,0. , PTM/f85.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367788.2329,6150045.7421,0. , PTM/f86.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359501.1070,6096662.0192,0. , PTM/f87.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350955.8714,6103879.0474,0. , PTM/f88.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343888.9397,6111993.1567,0. , PTM/f89.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352323.6398,6102808.1357,0. , PTM/f90.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344600.0768,6111655.9310,0. , PTM/f91.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369764.9904,6143983.1888,0. , PTM/f92.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371465.6965,6171482.3248,0. , PTM/f93.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350556.2803,6121645.5793,0. , PTM/f94.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343364.0343,6112892.6600,0. , PTM/f95.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348363.4901,6126295.0497,0. , PTM/f96.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369013.3271,6180265.5362,0. , PTM/f97.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345921.3808,6108778.6924,0. , PTM/f98.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 357568.3184,6093186.0001,0. , PTM/f99.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372305.9421,6161021.2482,0. , PTM/f100.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349879.5029,6119713.5416,0. , PTM/f101.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372333.9692,6188415.1566,0. , PTM/f102.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348299.1786,6136818.7455,0. , PTM/f103.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368845.1500,6157288.9200,0. , PTM/f104.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377141.5011,6165164.9639,0. , PTM/f105.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375100.2989,6160742.6694,0. , PTM/f106.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371155.8959,6183811.2580,0. , PTM/f107.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346858.9708,6108522.4962,0. , PTM/f108.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347946.1041,6126528.9930,0. , PTM/f109.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371252.1080,6174485.7033,0. , PTM/f110.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 365513.2038,6139911.9538,0. , PTM/f111.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368912.6638,6151302.0701,0. , PTM/f112.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347045.2871,6136233.4798,0. , PTM/f113.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344096.1549,6114368.0639,0. , PTM/f114.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369357.1860,6157788.1767,0. , PTM/f115.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 364014.1560,6139952.4096,0. , PTM/f116.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 364495.8845,6140299.3162,0. , PTM/f117.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 355585.4442,6092678.8933,0. , PTM/f118.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 362065.4248,6139854.3275,0. , PTM/f119.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 366712.8069,6139962.5424,0. , PTM/f120.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 357379.4225,6093191.3134,0. , PTM/f121.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377380.6450,6167246.8349,0. , PTM/f122.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 374494.0542,6160962.3689,0. , PTM/f123.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345260.0041,6133313.2601,0. , PTM/f124.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359548.9709,6096189.8734,0. , PTM/f125.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372168.6930,6160958.9146,0. , PTM/f126.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367754.5893,6153881.3700,0. , PTM/f127.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359495.1383,6141169.7144,0. , PTM/f128.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 354358.8339,6141108.7113,0. , PTM/f129.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345255.7490,6132623.6967,0. , PTM/f130.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344616.6693,6111423.8925,0. , PTM/f131.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370085.1840,6173397.3733,0. , PTM/f132.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369051.9494,6144553.4318,0. , PTM/f133.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 374860.7419,6166362.8491,0. , PTM/f134.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347945.5429,6120646.9893,0. , PTM/f135.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377631.6085,6166897.8893,0. , PTM/f136.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347111.7149,6130349.9923,0. , PTM/f137.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369214.4187,6157781.3132,0. , PTM/f138.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345203.8411,6133010.0535,0. , PTM/f139.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348942.3053,6137496.2580,0. , PTM/f140.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349099.7334,6137531.9761,0. , PTM/f141.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373318.8543,6138959.2024,0. , PTM/f142.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349539.4894,6123628.9941,0. , PTM/f143.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352866.1848,6086358.3943,0. , PTM/f144.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372282.2674,6177432.4492,0. , PTM/f145.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 366307.7987,6155544.6533,0. , PTM/f146.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377672.0930,6166593.1427,0. , PTM/f147.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345457.2362,6133359.7431,0. , PTM/f148.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369210.9716,6157945.8997,0. , PTM/f149.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370429.7597,6173455.2833,0. , PTM/f150.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349747.1662,6119621.6880,0. , PTM/f151.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350138.7783,6122274.4369,0. , PTM/f152.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377226.7929,6167503.8177,0. , PTM/f153.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375828.1055,6138751.3274,0. , PTM/f154.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359363.1311,6094694.7843,0. , PTM/f155.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 362996.1188,6139744.5510,0. , PTM/f156.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372691.3825,6166974.1913,0. , PTM/f157.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367651.4957,6139032.3850,0. , PTM/f158.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371335.4670,6177563.0400,0. , PTM/f159.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 355012.3739,6141060.6236,0. , PTM/f160.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347652.3713,6129564.0737,0. , PTM/f161.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372774.3832,6190761.6233,0. , PTM/f162.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367225.4755,6156203.1737,0. , PTM/f163.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353445.6243,6087095.1454,0. , PTM/f164.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350940.7210,6138923.0648,0. , PTM/f165.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367308.8353,6140134.3167,0. , PTM/f166.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352746.1844,6091008.7287,0. , PTM/f167.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346097.3496,6106201.2768,0. , PTM/f168.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367208.4917,6154073.8033,0. , PTM/f169.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 356757.3518,6141660.6216,0. , PTM/f170.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371506.1284,6177737.3282,0. , PTM/f171.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 361243.4311,6140243.9727,0. , PTM/f172.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347920.7137,6120397.2400,0. , PTM/f173.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344025.6884,6131830.2287,0. , PTM/f174.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367186.7035,6148029.9212,0. , PTM/f175.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352716.2760,6090707.0896,0. , PTM/f176.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371950.4878,6170352.5132,0. , PTM/f177.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353433.8421,6092012.6322,0. , PTM/f178.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372393.3591,6137370.7649,0. , PTM/f179.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 366321.4246,6155657.8137,0. , PTM/f180.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367139.1228,6148558.4270,0. , PTM/f181.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 356874.1400,6099238.9871,0. , PTM/f182.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359618.9360,6096040.6942,0. , PTM/f183.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 374994.3061,6160936.4295,0. , PTM/f184.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353598.9668,6088261.3135,0. , PTM/f185.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349880.5847,6123932.1933,0. , PTM/f186.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 366614.2044,6154468.3473,0. , PTM/f187.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369525.2721,6151815.6634,0. , PTM/f188.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372861.8796,6138401.1060,0. , PTM/f189.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368352.5440,6153211.0233,0. , PTM/f190.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372685.7612,6167644.1230,0. , PTM/f191.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347933.5163,6136828.5795,0. , PTM/f192.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373862.2974,6196033.1181,0. , PTM/f193.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 357432.2876,6093105.5252,0. , PTM/f194.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376353.1695,6163090.4636,0. , PTM/f195.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377729.9750,6166604.8754,0. , PTM/f196.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376776.4951,6163537.2189,0. , PTM/f197.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370269.0117,6174162.2700,0. , PTM/f198.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370076.3669,6178142.4352,0. , PTM/f199.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377631.6085,6166897.8893,0. , PTM/f200.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376732.3133,6167896.2333,0. , PTM/f201.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346117.5870,6134892.4500,0. , PTM/f202.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345865.8397,6133050.6641,0. , PTM/f203.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369242.8310,6158446.7957,0. , PTM/f204.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347623.2741,6137053.0713,0. , PTM/f205.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377507.2170,6165287.2318,0. , PTM/f206.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359367.3480,6141245.8111,0. , PTM/f207.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348109.1299,6126908.0442,0. , PTM/f208.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370999.9656,6177517.3377,0. , PTM/f209.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 351830.3886,6140165.7943,0. , PTM/f210.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346508.5428,6135696.8089,0. , PTM/f211.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372768.6107,6138476.9295,0. , PTM/f212.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359443.6043,6094829.2536,0. , PTM/f213.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367967.6774,6157425.5067,0. , PTM/f214.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350493.9292,6138714.5146,0. , PTM/f215.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352688.1243,6090406.9305,0. , PTM/f216.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359785.4278,6141069.5888,0. , PTM/f217.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346209.9375,6106001.1593,0. , PTM/f218.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367897.2409,6150144.8101,0. , PTM/f219.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369109.0560,6153420.1333,0. , PTM/f220.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349678.4853,6120505.2833,0. , PTM/f221.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377108.0140,6164625.2000,0. , PTM/f222.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373449.1196,6139044.6575,0. , PTM/f223.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345025.0900,6115116.9494,0. , PTM/f224.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346369.4583,6133789.6300,0. , PTM/f225.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344750.3053,6111328.1853,0. , PTM/f226.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372333.4482,6185864.9913,0. , PTM/f227.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343427.0377,6131580.0262,0. , PTM/f228.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371955.4467,6174651.9313,0. , PTM/f229.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348841.4110,6126230.1733,0. , PTM/f230.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373079.0130,6141872.1700,0. , PTM/f231.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375305.5842,6141217.3229,0. , PTM/f232.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 374905.9430,6166758.5880,0. , PTM/f233.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345559.6434,6115768.6367,0. , PTM/f234.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372260.3003,6161502.2067,0. , PTM/f235.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350679.9481,6123267.9759,0. , PTM/f236.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346752.2164,6134868.4639,0. , PTM/f237.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349155.8238,6124921.0637,0. , PTM/f238.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372989.2280,6193165.1528,0. , PTM/f239.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370678.7435,6160174.8254,0. , PTM/f240.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370410.3368,6182673.4130,0. , PTM/f241.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 362136.2327,6140297.1006,0. , PTM/f242.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375406.1142,6160821.0812,0. , PTM/f243.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343678.7758,6112159.7329,0. , PTM/f244.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368705.4029,6150583.0617,0. , PTM/f245.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375525.7044,6167471.4274,0. , PTM/f246.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347945.5429,6120646.9893,0. , PTM/f247.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344078.6901,6129189.6967,0. , PTM/f248.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369277.5518,6179327.0017,0. , PTM/f249.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346877.0768,6108331.4682,0. , PTM/f250.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368568.2219,6153487.6590,0. , PTM/f251.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372041.5961,6160932.7115,0. , PTM/f252.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 358313.8788,6093768.5872,0. , PTM/f253.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347480.3698,6120421.2050,0. , PTM/f254.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372803.7155,6166102.7085,0. , PTM/f255.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376747.2036,6164119.2396,0. , PTM/f256.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373111.1697,6141783.5000,0. , PTM/f257.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368497.9865,6146211.5649,0. , PTM/f258.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345740.3896,6110558.6137,0. , PTM/f259.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 342790.4138,6113484.5131,0. , PTM/f260.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371180.9187,6183791.8046,0. , PTM/f261.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 357171.8651,6099129.0034,0. , PTM/f262.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367752.8629,6139337.3115,0. , PTM/f263.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375131.8103,6160999.7731,0. , PTM/f264.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347407.6240,6130250.2174,0. , PTM/f265.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370295.5560,6137166.1506,0. , PTM/f266.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348019.4004,6104608.3401,0. , PTM/f267.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350722.3522,6120710.5190,0. , PTM/f268.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347323.8867,6120397.1556,0. , PTM/f269.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344359.7204,6129312.3826,0. , PTM/f270.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372333.4482,6185864.9913,0. , PTM/f271.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372201.0861,6175821.2079,0. , PTM/f272.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350649.3703,6121695.2433,0. , PTM/f273.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353050.3794,6089429.2847,0. , PTM/f274.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370487.1175,6137381.6314,0. , PTM/f275.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344223.4783,6114728.7091,0. , PTM/f276.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 356701.3063,6092782.8806,0. , PTM/f277.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 374121.4678,6141513.3361,0. , PTM/f278.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369214.4187,6157781.3132,0. , PTM/f279.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 358350.9132,6098276.4114,0. , PTM/f280.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367235.1062,6156902.6642,0. , PTM/f281.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370930.6911,6183576.2124,0. , PTM/f282.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348368.1977,6136706.6170,0. , PTM/f283.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367612.7851,6138430.4419,0. , PTM/f284.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372264.3892,6186370.1002,0. , PTM/f285.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343294.0104,6131458.4537,0. , PTM/f286.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371025.6499,6174204.2688,0. , PTM/f287.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375509.3288,6161724.0034,0. , PTM/f288.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367827.9534,6147234.9918,0. , PTM/f289.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348260.1617,6126402.6772,0. , PTM/f290.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368443.9285,6137540.4698,0. , PTM/f291.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 351152.2908,6139137.6785,0. , PTM/f292.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368914.1430,6180234.0833,0. , PTM/f293.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370660.2091,6183121.6399,0. , PTM/f294.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376852.8661,6167781.6063,0. , PTM/f295.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370387.2695,6178025.6375,0. , PTM/f296.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372351.6577,6189801.4621,0. , PTM/f297.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369376.1637,6136658.8833,0. , PTM/f298.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 366289.2970,6139916.4333,0. , PTM/f299.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 357537.0603,6141862.0676,0. , PTM/f300.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349571.2202,6137920.4195,0. , PTM/f301.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373901.6945,6138978.7043,0. , PTM/f302.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367650.3737,6138732.8665,0. , PTM/f303.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 361263.3284,6140330.7501,0. , PTM/f304.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 355205.4849,6100706.0032,0. , PTM/f305.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367728.4966,6156519.4945,0. , PTM/f306.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349034.6330,6137855.6050,0. , PTM/f307.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345799.8141,6110613.1496,0. , PTM/f308.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348458.3448,6125958.0724,0. , PTM/f309.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348128.2348,6136822.5425,0. , PTM/f310.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373109.4482,6193598.6922,0. , PTM/f311.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377380.6450,6167246.8349,0. , PTM/f312.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372570.4537,6137562.5967,0. , PTM/f313.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369186.7032,6153011.4861,0. , PTM/f314.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370925.1693,6177808.8433,0. , PTM/f315.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377428.6148,6167292.3166,0. , PTM/f316.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347380.4690,6136715.3200,0. , PTM/f317.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 364036.5227,6139849.3067,0. , PTM/f318.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345448.0561,6115652.6501,0. , PTM/f319.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 374628.9554,6160697.2258,0. , PTM/f320.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 363608.7641,6140338.0675,0. , PTM/f321.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347271.3286,6130328.2769,0. , PTM/f322.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353438.1986,6087279.4679,0. , PTM/f323.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370894.9233,6177637.0150,0. , PTM/f324.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343878.9669,6131791.1310,0. , PTM/f325.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371170.0789,6137039.5081,0. , PTM/f326.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343770.5979,6131650.0360,0. , PTM/f327.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349951.8513,6120807.0633,0. , PTM/f328.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 365098.5250,6140078.7867,0. , PTM/f329.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372012.1279,6176415.3449,0. , PTM/f330.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369051.9494,6144553.4318,0. , PTM/f331.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347426.3735,6136232.9782,0. , PTM/f332.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347807.4397,6136745.0193,0. , PTM/f333.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376072.5126,6139002.2146,0. , PTM/f334.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370005.6931,6178303.2974,0. , PTM/f335.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353093.2439,6089271.5719,0. , PTM/f336.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352767.5762,6089962.7111,0. , PTM/f337.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345253.7682,6115618.0221,0. , PTM/f338.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 365372.5765,6139777.8491,0. , PTM/f339.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371543.4578,6137289.6918,0. , PTM/f340.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353433.8421,6092012.6322,0. , PTM/f341.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 342896.7561,6113027.2885,0. , PTM/f342.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 361820.1255,6140108.7623,0. , PTM/f343.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 357718.1345,6141694.9893,0. , PTM/f344.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352974.5861,6091416.0554,0. , PTM/f345.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352072.3814,6139917.6223,0. , PTM/f346.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350820.1944,6120512.3310,0. , PTM/f347.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344616.6693,6111423.8925,0. , PTM/f348.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370828.8053,6177811.8700,0. , PTM/f349.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 374420.6757,6165857.9474,0. , PTM/f350.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368404.3341,6146510.7430,0. , PTM/f351.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377380.6450,6167246.8349,0. , PTM/f352.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350294.3958,6122503.0972,0. , PTM/f353.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352944.3844,6102374.9861,0. , PTM/f354.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367726.2506,6137908.4701,0. , PTM/f355.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344500.4290,6129371.0564,0. , PTM/f356.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372970.8717,6169489.2367,0. , PTM/f357.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349060.9378,6104432.0382,0. , PTM/f358.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367638.2889,6137844.3360,0. , PTM/f359.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347681.8326,6129716.9555,0. , PTM/f360.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367008.8328,6149230.8992,0. , PTM/f361.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345327.2939,6109830.0672,0. , PTM/f362.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375373.7352,6167598.1733,0. , PTM/f363.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343988.0834,6111823.8968,0. , PTM/f364.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370489.0427,6173685.6415,0. , PTM/f365.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 363185.9333,6140191.7633,0. , PTM/f366.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370233.5968,6159763.4483,0. , PTM/f367.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349399.9559,6125357.4238,0. , PTM/f368.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349659.9809,6124962.5717,0. , PTM/f369.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349028.5327,6125063.4560,0. , PTM/f370.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369033.6998,6152638.1080,0. , PTM/f371.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372052.4584,6176904.1460,0. , PTM/f372.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346498.1653,6107042.7700,0. , PTM/f373.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350461.1545,6123686.4655,0. , PTM/f374.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369020.7046,6144749.0293,0. , PTM/f375.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 366890.2833,6140083.8600,0. , PTM/f376.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375131.8103,6160999.7731,0. , PTM/f377.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352004.7795,6085562.1408,0. , PTM/f378.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350660.1680,6123431.6986,0. , PTM/f379.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372245.8989,6171260.1892,0. , PTM/f380.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353838.9465,6141249.0211,0. , PTM/f381.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372073.1033,6136689.6934,0. , PTM/f382.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345930.8265,6109688.4862,0. , PTM/f383.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 363785.8517,6140264.4400,0. , PTM/f384.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344449.1452,6114649.4019,0. , PTM/f385.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 355287.0453,6100808.7876,0. , PTM/f386.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347348.1856,6108019.4744,0. , PTM/f387.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376291.8680,6163291.6800,0. , PTM/f388.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372140.4112,6137571.3034,0. , PTM/f389.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373453.8837,6194886.4127,0. , PTM/f390.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349640.4226,6123728.2862,0. , PTM/f391.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372783.8352,6168515.0311,0. , PTM/f392.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373928.1497,6165482.5135,0. , PTM/f393.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372798.3924,6166312.0410,0. , PTM/f394.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 374108.6591,6141741.7393,0. , PTM/f395.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 345308.2793,6108755.8733,0. , PTM/f396.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372440.4686,6175789.1153,0. , PTM/f397.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 356431.9715,6141161.6657,0. , PTM/f398.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372300.5346,6161110.1689,0. , PTM/f399.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372312.7898,6170756.7407,0. , PTM/f400.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375972.4817,6167997.2510,0. , PTM/f401.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370258.9124,6172605.0002,0. , PTM/f402.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 364933.0248,6140007.2874,0. , PTM/f403.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344056.2184,6111928.1166,0. , PTM/f404.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350709.6336,6123453.9683,0. , PTM/f405.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367754.5893,6153881.3700,0. , PTM/f406.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368568.8250,6150813.1358,0. , PTM/f407.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348307.0693,6126948.8770,0. , PTM/f408.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 343294.0104,6131458.4537,0. , PTM/f409.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346014.2225,6109378.4254,0. , PTM/f410.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367922.8360,6139041.1000,0. , PTM/f411.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 354228.5560,6092440.8758,0. , PTM/f412.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350995.8267,6121748.9306,0. , PTM/f413.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359006.8315,6094382.0156,0. , PTM/f414.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371056.7777,6137142.3167,0. , PTM/f415.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349932.7565,6124791.9075,0. , PTM/f416.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375970.8671,6138855.4295,0. , PTM/f417.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372410.4833,6171264.8033,0. , PTM/f418.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346221.7821,6107656.7880,0. , PTM/f419.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346495.8779,6134094.9527,0. , PTM/f420.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373911.6153,6139050.6051,0. , PTM/f421.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359501.1070,6096662.0192,0. , PTM/f422.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370196.3397,6158746.6598,0. , PTM/f423.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372455.5101,6137510.6794,0. , PTM/f424.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347171.7226,6108654.4616,0. , PTM/f425.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 366599.4869,6139968.1380,0. , PTM/f426.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352331.6213,6140088.7281,0. , PTM/f427.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371211.9759,6172232.5772,0. , PTM/f428.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369187.3326,6144679.4418,0. , PTM/f429.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344449.1452,6114649.4019,0. , PTM/f430.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348626.3903,6125932.2291,0. , PTM/f431.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346425.4559,6107129.5789,0. , PTM/f432.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350587.3390,6122543.7433,0. , PTM/f433.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 373339.6155,6160853.6532,0. , PTM/f434.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348307.0693,6126948.8770,0. , PTM/f435.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347498.8748,6130122.9498,0. , PTM/f436.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370117.3086,6159673.7701,0. , PTM/f437.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 359365.1594,6094867.4417,0. , PTM/f438.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346483.7178,6117211.0590,0. , PTM/f439.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346932.3570,6108592.7658,0. , PTM/f440.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372489.8597,6137334.3667,0. , PTM/f441.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371420.0396,6160427.5812,0. , PTM/f442.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346268.1949,6106478.0418,0. , PTM/f443.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344431.8995,6111683.8502,0. , PTM/f444.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 374220.0475,6165554.2526,0. , PTM/f445.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344649.5371,6131889.5034,0. , PTM/f446.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370290.6558,6144354.7726,0. , PTM/f447.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376674.5555,6163980.1820,0. , PTM/f448.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353545.1834,6141153.3868,0. , PTM/f449.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346189.6377,6134122.9710,0. , PTM/f450.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375943.7057,6139930.5933,0. , PTM/f451.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372742.6820,6168078.2361,0. , PTM/f452.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 374494.0542,6160962.3689,0. , PTM/f453.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348322.7840,6120107.9133,0. , PTM/f454.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344641.1635,6129429.6157,0. , PTM/f455.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 353466.2741,6140903.3754,0. , PTM/f456.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344825.6412,6132036.7400,0. , PTM/f457.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377116.3760,6167617.3432,0. , PTM/f458.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 352685.1633,6086120.9326,0. , PTM/f459.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350722.4486,6121492.9479,0. , PTM/f460.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350600.8200,6139189.1567,0. , PTM/f461.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377076.4138,6164650.2616,0. , PTM/f462.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 364051.6732,6140375.3891,0. , PTM/f463.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 366729.9971,6155767.9457,0. , PTM/f464.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370517.5986,6177933.8012,0. , PTM/f465.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 376072.9487,6163570.3551,0. , PTM/f466.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346887.2803,6104958.9620,0. , PTM/f467.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370862.4357,6174165.8427,0. , PTM/f468.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347680.3650,6127478.9067,0. , PTM/f469.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368571.7511,6137384.9958,0. , PTM/f470.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372590.6720,6176761.2533,0. , PTM/f471.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344760.9576,6129533.8226,0. , PTM/f472.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347658.1887,6137247.0413,0. , PTM/f473.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 377608.0144,6165422.3508,0. , PTM/f474.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368010.0735,6153709.0464,0. , PTM/f475.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369722.0737,6181645.1733,0. , PTM/f476.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 370917.2197,6172514.2658,0. , PTM/f477.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 355012.3739,6141060.6236,0. , PTM/f478.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 375377.7430,6167766.6167,0. , PTM/f479.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 366799.0290,6154475.4775,0. , PTM/f480.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 348141.7497,6120008.6904,0. , PTM/f481.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371773.5583,6171095.8536,0. , PTM/f482.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368328.6767,6146199.0569,0. , PTM/f483.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344050.0257,6131734.2267,0. , PTM/f484.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372466.8792,6161009.4994,0. , PTM/f485.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372812.2631,6191689.6579,0. , PTM/f486.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 368333.8043,6146322.6667,0. , PTM/f487.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347855.2336,6137227.7708,0. , PTM/f488.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369878.6531,6158865.3549,0. , PTM/f489.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 346538.1693,6108956.8167,0. , PTM/f490.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 347134.9929,6136142.2765,0. , PTM/f491.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349829.4887,6124900.5325,0. , PTM/f492.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 349667.1006,6137817.2862,0. , PTM/f493.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 344860.5006,6132277.2883,0. , PTM/f494.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 358131.5938,6093750.5452,0. , PTM/f495.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 369443.5883,6136710.8567,0. , PTM/f496.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 372603.4587,6166118.2826,0. , PTM/f497.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 371677.8380,6160614.5767,0. , PTM/f498.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 350502.7010,6138116.0533,0. , PTM/f499.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+
+bc == ptm_source, 367976.8062,6138326.7786,0. , PTM/f500.csv
+bc groups == fb
+bc header == ISOTime,fb
+bc scale == 0.2777
+end bc
+
+output dir == ../Output_PTM/ 
+output == ptm_netcdf 
+output groups == fb 
+output interval == 300 
+output compression == 1 
+end output 

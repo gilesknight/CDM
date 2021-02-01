@@ -1,0 +1,41 @@
+
+
+
+% valid only midday/afternoon conditions
+
+
+%------ stratification
+strat = (T_top - T_bottom);
+
+if(strat<0.1)
+ fS = 0;
+else
+ fS = 0 + max((4-strat)/4,1);
+endif
+
+%------ temperature
+%The numbers I've used for Darwin Reservoir cyanobacteria are:
+%Theta_growth (v) = 1.08;
+%T_std = 28; %T_opt = 34; %T_max = 40;
+k = 4.1102;
+a = 35.0623;
+b = 0.1071;
+
+T = T_top
+
+fT = v^(T-20)-v^(k(T-a))+b;
+
+%------ nitrogen
+N = NO3_max + NH4_max;    max in column
+KN = 4;                   in mmol/m3
+fN = N/(KN+N);
+
+%------ phosphorus
+P = FRP_max;   max in column
+KP = 0.15;     in mmol/m3
+fP = P/(KP+P);
+
+
+%------ TOTAL RISK
+
+CYANO = fS * fT * min(fN , fP);

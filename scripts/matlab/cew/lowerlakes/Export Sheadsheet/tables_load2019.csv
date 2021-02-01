@@ -1,0 +1,13 @@
+Mean
+Site,Scenario,Salinity (PSU),Ammonium (mg/L),Phosphate (mg/L),Silica (mg/L),Particulate organic nitrogen (mg/L),Particulate organic phosphorus (mg/L),Chlorophyll a (mg/L)
+Wellington,With all Water,228675.7243,    0.5862,    4.9095, 2991.4199, 1203.3013,  102.1509,   20.4404,
+Wellington,No CEW,162625.3420,    0.5123,    3.1982, 2439.0615,  827.5786,   72.4672,   12.8486,
+Wellington,No eWater,132926.7341,    0.3873,    2.6802, 2180.1822,  689.7025,   60.8309,   10.1043,
+Lake Alexandrina Middle,With all Water,228293.1906,   12.0159,    0.3447,10582.6127, 1291.3049,  128.1479,    5.8175,
+Lake Alexandrina Middle,No CEW,67396.4806,    1.9834,    0.1134, 3819.1542,  419.1614,   42.6696,    1.6155,
+Lake Alexandrina Middle,No eWater,    0.0000,    0.0000,    0.0000,    0.0000,    0.0000,    0.0000,    0.0000,
+Murray Mouth,With all Water,-2680573.8886,   -7.5052,   -2.1753,10334.6556,  975.6278,  101.1605,    5.6611,
+Murray Mouth,No CEW,-5151627.3596,  -18.4946,   -2.6888, 4865.3458,  159.2676,   23.6880,    1.8076,
+Murray Mouth,No eWater,-5438074.6548,  -21.8588,   -3.0736, 1630.3360, -242.2370,  -16.5038,    0.5197,
+
+
