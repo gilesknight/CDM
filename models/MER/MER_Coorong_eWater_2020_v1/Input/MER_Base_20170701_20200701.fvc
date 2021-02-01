@@ -1,0 +1,247 @@
+! Coorong Ruppia Model
+
+!LINKS____________________________________________________________
+
+!TIME COMANDS
+!_________________________________________________________________
+
+time format == ISODATE
+
+start time == 01/07/2017 00:00:00
+end time ==  01/07/2020 00:00:00
+
+timestep limits == 0.1, 15 ! Min and Max Timesteps
+!Timestep == 3600
+display dt == 3600.
+cfl external == 0.9
+cfl internal == 0.9
+
+! SIMULATION CONFIGURATION
+!_________________________________________________________________
+include salinity == 1,1
+momentum mixing model == SMAGORINSKY                     ! 2
+scalar mixing model == ELDER                             ! 3
+include heat == 1,0
+LONGWAVERADIATIONMODEL == 1
+SHORTWAVERADIATIONALBEDO == 0.03
+include temperature == 1,1
+include sediment == 0,0
+vertical mixing model == external !parametric !constant
+external turbulence model dir == ..\External\GOTM\
+spatial order == 1,2
+horizontal gradient limiter == LCD
+vertical gradient limiter == MC
+bottom drag model == ks
+equation of state == UNESCO
+waterqualitymodel == EXTERNAL
+external water quality model dir == ..\External\AED2\
+
+! Heat PARAMETERS
+SHORTWAVERADIATIONEXTINCTIONCOEFFICIENTS == 5.00000,1.20000,3.00000,5.00000
+SHORTWAVERADIATIONFRACTIONS == 0.51,0.45,0.035,0.005
+!METEOROLOGICALSENSORHEIGHT == 2
+
+!MODEL PARAMETERS
+!_________________________________________________________________
+stability limits == 100.,500.
+cell wet/dry depths == 4.0e-2, 4.0e-2
+global horizontal eddy viscosity == 0.2
+global horizontal scalar diffusivity == 250.0,25.0
+g == 9.81
+reference density == 1025.
+latitude == -35.8
+Ntracer == 2
+Initial Water Level == 0.6060
+
+!SEDIMENT PARAMETERS
+!_________________________________________________________________
+
+
+
+!Initial Conditions
+!_________________________________________________________________
+INITIAL CONDITION 2D == ..\BC\Initial\init_conditions_20170701.csv
+
+
+!_________________________________________________________________
+Wind Stress Params == 0., 0.8E-03, 50., 4.05E-03 !!!Wu=1.0
+
+!GEOMETRY
+!_________________________________________________________________
+geometry 2d == ../Geo/014_Coorong_Salt_Crk_Mouth_Channel_MZ3_Culverts.2dm
+echo geometry csv == 1
+echo geometry netcdf == 1
+!vertical mesh type == z
+!layer faces == ..\Geo\layers.csv
+!sigma layers == 3
+min bottom layer thickness == 0.1
+!cell 3d depth == 5.0e-1
+
+material == 1  ! Shallow sand shoals near Ewe Island and Tauwitchere
+  bottom roughness == 0.018
+end material
+
+material == 2  ! Finniss and Currency Area and Hells Gate
+  bottom roughness == 0.018
+end material
+
+material == 3  ! north and south coorong
+  bottom roughness == 0.018
+end material
+
+material == 4  ! Offshore Area (nearer to murray mouth)
+  bottom roughness == 0.018
+end material
+
+material == 5  ! offshore areas (away from murray mouth)
+  bottom roughness == 0.018
+end material
+
+material == 6  ! Area near throat of Murray Mouth still with waves
+  bottom roughness == 0.018
+end material
+
+material == 7  ! current dominated area just inside mouth (from Reedy Is to start North Lagoon)!
+  bottom roughness == 0.018
+end material
+
+material == 8  ! Lake Albert
+  bottom roughness == 0.02
+end material
+
+material == 9  ! Lake Alex
+  bottom roughness == 0.02
+end material
+
+material == 10  ! Flood tide delta shallow area and channel to east and north
+  bottom roughness == 0.030
+end material
+
+material == 11  ! area surrounding the mouth where high sed transport is expected!
+  bottom roughness == 0.018
+end material
+
+material == 12  ! Goolwa Channel (from West Clayton to Reedy Island)
+  bottom roughness == 0.018
+end material
+
+material == 14  ! Lake Albert and Narrung Channel!
+  bottom roughness == 0.02
+end material
+
+material == 16  ! Narrung Narrows Wetlands (side of channel!)
+  bottom roughness == 0.025
+end material
+
+material == 15 ! Around Edges of Morphologically Active Area - this was needed for previous versions of TUFLOW-FV can be removed if needed!
+  bottom roughness == 0.018
+end material
+
+
+!STRUCTURES
+!_________________________________________________________________
+
+structure logging == 0  ! File opened will be the control file name with extension .slf (structure logging file)
+
+! HYDRAULIC STRUCTURES
+!_________________________________________________________________
+!_________________________________________________
+
+
+
+!BOUNDARY CONDITIONS
+!_________________________________________________________________
+
+
+
+bc == WL, 1, ../BC/Inflows/Basecase/BK_2020.csv
+  bc header ==  ISOTime,wl,sal,temp,trace_1,trace_2,ss1,ret,oxy,rsi,amm,nit,frp,frp_ads,doc,poc,don,pon,dop,pop,grn,mag_ulva,mag_ulva_in,mag_ulva_ip
+end bc
+
+bc == Q, 2, ../BC/Inflows/Basecase/Goolwa_Extended_2020.csv
+  bc header ==  ISOTime,flow,sal,temp,trace_1,trace_2,ss1,ret,oxy,rsi,amm,nit,frp,frp_ads,doc,poc,don,pon,dop,pop,grn,mag_ulva,mag_ulva_in,mag_ulva_ip
+end bc
+
+bc == Q, 3, ../BC/Inflows/Basecase/Mundoo_Extended_2020.csv
+  bc header ==  ISOTime,flow,sal,temp,trace_1,trace_2,ss1,ret,oxy,rsi,amm,nit,frp,frp_ads,doc,poc,don,pon,dop,pop,grn,mag_ulva,mag_ulva_in,mag_ulva_ip
+end bc
+
+bc == Q, 4, ../BC/Inflows/Basecase/Boundary_Extended_2020.csv
+  bc header ==  ISOTime,flow,sal,temp,trace_1,trace_2,ss1,ret,oxy,rsi,amm,nit,frp,frp_ads,doc,poc,don,pon,dop,pop,grn,mag_ulva,mag_ulva_in,mag_ulva_ip
+end bc
+
+bc == Q, 5, ../BC/Inflows/Basecase/Ewe_Extended_2020.csv
+  bc header ==  ISOTime,flow,sal,temp,trace_1,trace_2,ss1,ret,oxy,rsi,amm,nit,frp,frp_ads,doc,poc,don,pon,dop,pop,grn,mag_ulva,mag_ulva_in,mag_ulva_ip
+end bc
+
+bc == Q, 6, ../BC/Inflows/Basecase/Tauwitchere_Extended_2020.csv
+  bc header ==  ISOTime,flow,sal,temp,trace_1,trace_2,ss1,ret,oxy,rsi,amm,nit,frp,frp_ads,doc,poc,don,pon,dop,pop,grn,mag_ulva,mag_ulva_in,mag_ulva_ip
+end bc
+
+
+bc == QC, 378767.6,6001315.3, ../BC/Inflows/Basecase/Salt_2020.csv
+  bc header ==  ISOTime,flow,sal,temp,trace_1,trace_2,ss1,ret,oxy,rsi,amm,nit,frp,frp_ads,doc,poc,don,pon,dop,pop,grn,mag_ulva,mag_ulva_in,mag_ulva_ip
+  bc scale == 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+end bc
+
+bc == W10, ../BC/Met/wind_2012_2020.csv
+  bc header == ISOTime,Wx,Wy
+  bc scale == 1.1,1.1
+end bc
+
+bc == AIR_TEMP, ../BC/Met/met_2012_2020.csv
+  bc header == ISOTime,ATemp
+end bc
+
+bc == REL_HUM, ../BC/Met/met_2012_2020.csv
+  bc header == ISOTime,Rel_Hum
+end bc
+
+bc == SW_RAD, ../BC/Met/rad_2012_2020.csv
+  bc header == ISOTime,Sol_Rad
+  bc scale == 0.8
+end bc
+
+bc == LW_Net, ../BC/Met/rad_2012_2020.csv
+  bc header == ISOTime,LW_Net
+  bc scale == 1.1
+end bc
+bc == PRECIP, ../BC/Met/rain_2012_2020.csv
+  bc header == ISOTime,Precip
+end bc
+
+!INITIAL CONDITIONS
+!_________________________________________________________________
+
+
+!restart == lower_lakes.rst
+
+
+!OUTPUT COMMANDS
+!_________________________________________________________________
+
+output dir == ..\Output\
+
+!output == DATV
+!  output parameters == Sal,v,H,D
+!  output interval == 10800.00
+!end output
+!
+output == flux
+  output interval == 7200
+end output
+!
+output == netcdf
+  output parameters == h,v,d,Sal,Temp,trace_1,trace_2,wq_all,wq_diag_all
+  output interval == 10800
+end output
+
+
+
+!output == transport
+!  output interval == 900
+!end output
+
+
+
+write restart dt == 10.
