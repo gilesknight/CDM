@@ -1,0 +1,20 @@
+Variable,Site
+FLOW,OFFTAKE_MBO
+SAL,EPA2014_LMRIA_Plume_Burdett
+TEMP,EPA2014_LMRIA_Plume_Burdett
+TRACE_1,No Site
+WQ_TRC_SS1,EPA2014_LMRIA_Plume_Burdett
+WQ_TRC_RET,No Site
+WQ_OXY_OXY,SAW_Murray_Bridge_SP
+WQ_SIL_RSI,EPA2014_LMRIA_Plume_Burdett
+WQ_NIT_AMM,EPA2014_LMRIA_Plume_Mobilong
+WQ_NIT_NIT,EPA2014_LMRIA_Plume_Mobilong
+WQ_PHS_FRP,EPA2014_LMRIA_Plume_Mobilong
+WQ_PHS_FRP_ADS,EPA2014_LMRIA_Plume_Mobilong
+WQ_OGM_DOC,EPA2014_LMRIA_Plume_Burdett
+WQ_OGM_POC,No Site
+WQ_OGM_DON,EPA2014_Lake_Alexandrina_Wellington
+WQ_OGM_PON,EPA2014_Lake_Alexandrina_Wellington
+WQ_OGM_DOP,SAW_Murray_Bridge_SP
+WQ_OGM_POP,SAW_Murray_Bridge_SP
+WQ_PHY_GRN,SAW_Tailem_Bend

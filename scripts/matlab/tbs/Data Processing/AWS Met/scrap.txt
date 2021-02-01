@@ -1,0 +1,14 @@
+{"token":"NkC1l7/jK50B+2WbfwcvoA569L/AO17pD1/cFNLvzB6NpgNLVoHZkcgXo+bdYeWK","accountId":536}
+
+Email:               Brendan.busch@uwa.edu.au
+Password:          XlamSHTE3t
+
+https://api.greenbrain.net.au/v3/auth/login
+
+https://api.awsnetwork.com.au/v3/auth/login
+
+{"token":"5ih2vwlDJbVHzLLiT1QwqNwhQm1j7eUmYCQ2DCV6t45LhVuAOOehrISy0CRXGbFi","accountId":536}
+
+https://api.awsnetwork.com.au/v3/bootstrap
+
+https://api.awsnetwork.com.au/v3?Authorization: Bearer {"5ih2vwlDJbVHzLLiT1QwqNwhQm1j7eUmYCQ2DCV6t45LhVuAOOehrISy0CRXGbFi"}

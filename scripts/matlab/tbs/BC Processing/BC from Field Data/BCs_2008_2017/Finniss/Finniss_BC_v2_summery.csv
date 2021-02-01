@@ -1,0 +1,20 @@
+Variable,Site
+FLOW,A4261208
+SAL,EPA2014_Finniss_River_US1
+TEMP,EPA2014_Finniss_River_US1
+TRACE_1,No Site
+WQ_TRC_SS1,EPA2014_Finniss_River_US1
+WQ_TRC_RET,No Site
+WQ_OXY_OXY,EPA2014_Finniss_River_US1
+WQ_SIL_RSI,EPA2014_Finniss_River_Finniss_2
+WQ_NIT_AMM,EPA2014_Finniss_River_US1
+WQ_NIT_NIT,EPA2014_Finniss_River_US1
+WQ_PHS_FRP,EPA2014_Finniss_River_DS_of_WL
+WQ_PHS_FRP_ADS,EPA2014_Finniss_River_US1
+WQ_OGM_DOC,EPA2014_Finniss_River_Finniss_1
+WQ_OGM_POC,Lock1
+WQ_OGM_DON,EPA2014_Finniss_River_US1
+WQ_OGM_PON,EPA2014_Finniss_River_US1
+WQ_OGM_DOP,EPA2014_Finniss_River_US1
+WQ_OGM_POP,EPA2014_Finniss_River_US1
+WQ_PHY_GRN,EPA2014_Finniss_River_Finniss_1

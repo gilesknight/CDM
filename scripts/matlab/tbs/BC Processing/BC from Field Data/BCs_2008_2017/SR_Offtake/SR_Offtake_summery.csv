@@ -1,0 +1,20 @@
+Variable,Site
+FLOW,OFFTAKE_SR
+SAL,SAW_Mypolonga_Surface
+TEMP,SAW_Mypolonga_Surface
+TRACE_1,No Site
+WQ_TRC_SS1,SAW_Mypolonga_Surface
+WQ_TRC_RET,No Site
+WQ_OXY_OXY,SAW_Mypolonga_Surface
+WQ_SIL_RSI,SAW_Murray_Bridge_SP
+WQ_NIT_AMM,EPA2014_LMRIA_Plume_Mobilong
+WQ_NIT_NIT,SAW_Mypolonga_Surface
+WQ_PHS_FRP,SAW_Mypolonga_Surface
+WQ_PHS_FRP_ADS,SAW_Mypolonga_Surface
+WQ_OGM_DOC,SAW_Mypolonga_Surface
+WQ_OGM_POC,Lock1
+WQ_OGM_DON,EPA2014_Lake_Alexandrina_Top
+WQ_OGM_PON,EPA2014_Lake_Alexandrina_Top
+WQ_OGM_DOP,SAW_Mypolonga_Surface
+WQ_OGM_POP,SAW_Mypolonga_Surface
+WQ_PHY_GRN,SAW_Tailem_Bend

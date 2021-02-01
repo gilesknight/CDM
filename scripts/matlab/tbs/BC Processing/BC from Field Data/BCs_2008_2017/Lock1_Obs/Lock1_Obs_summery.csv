@@ -1,0 +1,20 @@
+Variable,Site
+FLOW,A4260903
+SAL,A4260903
+TEMP,SAW_Swan_Reach_SP
+TRACE_1,No Site
+WQ_TRC_SS1,SAW_Swan_Reach_SP
+WQ_TRC_RET,No Site
+WQ_OXY_OXY,SAW_Swan_Reach_SP
+WQ_SIL_RSI,SAW_Swan_Reach_SP
+WQ_NIT_AMM,EPA2014_LMRIA_Plume_Mobilong
+WQ_NIT_NIT,SAW_Swan_Reach_SP
+WQ_PHS_FRP,SAW_Swan_Reach_SP
+WQ_PHS_FRP_ADS,SAW_Swan_Reach_SP
+WQ_OGM_DOC,SAW_Swan_Reach_SP
+WQ_OGM_POC,Lock1
+WQ_OGM_DON,EPA2014_Lake_Alexandrina_Top
+WQ_OGM_PON,EPA2014_Lake_Alexandrina_Top
+WQ_OGM_DOP,SAW_Swan_Reach_SP
+WQ_OGM_POP,SAW_Swan_Reach_SP
+WQ_PHY_GRN,SAW_Morgan

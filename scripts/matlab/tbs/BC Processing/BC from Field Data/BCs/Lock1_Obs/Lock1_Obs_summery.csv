@@ -1,0 +1,30 @@
+Variable,Site
+FLOW,A4260903
+SAL,SAW_Blanchetown_Raw
+TEMP,SAW_Blanchetown_Raw
+TRACE_1,No Site
+WQ_TRC_SS1,SAW_Blanchetown_Raw
+WQ_TRC_RET,No Site
+WQ_OXY_OXY,SAW_Blanchetown_Raw
+WQ_CAR_DIC,EPA2014_LMRIA_Plume_Toora
+WQ_CAR_PH,SAW_Blanchetown_Raw
+WQ_CAR_CH4,No Site
+WQ_SIL_RSI,SAW_Swan_Reach_SP
+WQ_NIT_AMM,EPA2014_LMRIA_Plume_Toora
+WQ_NIT_NIT,SAW_Blanchetown_Raw
+WQ_NIT_N2O,No Site
+WQ_PHS_FRP,SAW_Blanchetown_Raw
+WQ_PHS_FRP_ADS,SAW_Blanchetown_Raw
+WQ_OGM_DOC,SAW_Blanchetown_Raw
+WQ_OGM_POC,No Site
+WQ_OGM_DON,EPA2014_Lake_Alexandrina_Wellington
+WQ_OGM_PON,EPA2014_Lake_Alexandrina_Wellington
+WQ_OGM_DOP,SAW_Blanchetown_Raw
+WQ_OGM_POP,SAW_Blanchetown_Raw
+WQ_PHY_GRN,SAW_Morgan
+WQ_ZOO_GRAZER,No Site
+WQ_GEO_PE,No Site
+WQ_GEO_UBALCHG,No Site
+WQ_LND_TRACER,No Site
+WQ_SBG_TRACER,No Site
+WQ_SBG_DOM_LEACHATE,No Site

@@ -1,0 +1,21 @@
+"Daily Weather Observations for St George, Queensland for November 2018"
+"Prepared at 00:26 UTC on Thursday 15 November 2018   IDCJDW4110.201811"
+"Copyright 2003 Commonwealth Bureau of Meteorology"
+"Observations were drawn from St George Airport {station 043109}"
+
+,"Date","Minimum temperature (°C)","Maximum temperature (°C)","Rainfall (mm)","Evaporation (mm)","Sunshine (hours)","Direction of maximum wind gust ","Speed of maximum wind gust (km/h)","Time of maximum wind gust","9am Temperature (°C)","9am relative humidity (%)","9am cloud amount (oktas)","9am wind direction","9am wind speed (km/h)","9am MSL pressure (hPa)","3pm Temperature (°C)","3pm relative humidity (%)","3pm cloud amount (oktas)","3pm wind direction","3pm wind speed (km/h)","3pm MSL pressure (hPa)"
+,2018-11-1,20.5,35.1,0,,,NNE,44,13:35,27.4,43,,N,19,1021.0,34.2,12,,NNE,22,1015.9
+,2018-11-2,21.3,34.9,0,,,N,57,06:59,26.1,42,,N,28,1021.5,32.8,16,,N,20,1016.3
+,2018-11-3,22.7,38.4,0,,,,,,27.1,34,,N,26,1017.7,36.9,18,,NNW,19,1011.6
+,2018-11-4,22.2,40.3,,,,WSW,50,16:14,30.9,23,,SSW,15,1013.4,39.7,10,,SW,24,1007.7
+,2018-11-5,20.5,42.6,0,,,WNW,39,13:56,33.7,12,,N,20,1010.9,41.3,9,,W,17,1005.2
+,2018-11-6,28.6,43.1,0,,,NNW,52,12:16,36.4,18,,NNW,24,1009.4,40.6,10,,NNW,22,1004.5
+,2018-11-7,27.1,38.7,0,,,SW,67,11:31,35.4,20,,NW,20,1006.5,27.4,39,,S,31,1006.6
+,2018-11-8,13.2,22.9,19.8,,,SW,46,00:15,16.2,58,,SSW,22,1018.1,21.8,28,,SW,26,1016.1
+,2018-11-9,9.7,27.4,0.2,,,N,31,10:19,19.1,41,,NE,17,1019.6,25.8,24,,WNW,9,1014.5
+,2018-11-10,16.4,29.7,0,,,N,39,07:28,22.3,41,,N,24,1016.5,28.2,22,,NE,9,1012.5
+,2018-11-11,16.0,32.2,0,,,N,33,07:21,25.4,40,,NNE,20,1017.4,31.0,21,,N,9,1014.0
+,2018-11-12,19.3,32.2,0,,,NNE,37,08:10,24.6,36,,NNE,20,1019.3,31.4,20,,SSE,13,1014.3
+,2018-11-13,19.8,33.0,0,,,NE,39,07:48,25.6,30,,NNE,20,1017.4,31.5,16,,NW,13,1012.2
+,2018-11-14,22.3,31.1,0,,,SW,65,17:30,23.9,49,,N,24,1015.6,30.0,26,,NE,13,1013.3
+,2018-11-15,17.4,,0.8,,,,,,27.4,36,,N,9,1017.1,,,,,,

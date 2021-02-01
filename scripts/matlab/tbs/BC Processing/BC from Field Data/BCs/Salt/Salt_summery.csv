@@ -1,0 +1,30 @@
+Variable,Site
+FLOW,A2390568
+SAL,A2390568
+TEMP,A2390568
+TRACE_1,No Site
+WQ_TRC_SS1,EPA_Salt_Creek_Flow
+WQ_TRC_RET,No Site
+WQ_OXY_OXY,EPA2014_Morella_Basin_South_Salt_Creek
+WQ_CAR_DIC,EPA2014_Morella_Basin_North_Jack_Point
+WQ_CAR_PH,EPA2014_Morella_Basin_South_Salt_Creek
+WQ_CAR_CH4,No Site
+WQ_SIL_RSI,EPA_Salt_Creek_Flow
+WQ_NIT_AMM,EPA_Salt_Creek
+WQ_NIT_NIT,EPA_Salt_Creek
+WQ_NIT_N2O,No Site
+WQ_PHS_FRP,EPA_Salt_Creek
+WQ_PHS_FRP_ADS,EPA_Salt_Creek
+WQ_OGM_DOC,EPA_Salt_Creek_South_12
+WQ_OGM_POC,No Site
+WQ_OGM_DON,EPA_Salt_Creek
+WQ_OGM_PON,EPA_Salt_Creek
+WQ_OGM_DOP,EPA_Salt_Creek
+WQ_OGM_POP,EPA_Salt_Creek
+WQ_PHY_GRN,EPA_Salt_Creek
+WQ_ZOO_GRAZER,No Site
+WQ_GEO_PE,No Site
+WQ_GEO_UBALCHG,No Site
+WQ_LND_TRACER,No Site
+WQ_SBG_TRACER,No Site
+WQ_SBG_DOM_LEACHATE,No Site

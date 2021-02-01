@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Report - Site Information Summary</title>
+</head>
+<body bgcolor=#FFFFFF>
+<pre><font size=2>
+
+Dpt of Environment, Water and Natural Resources                                                             09:20_14/10/2018  Page 1
+                                                   HYSITREP - Site Summary Report                                                   
+                                             A5131015 - Middle River Upstream Reservoir                                             
+
+SITE DESCRIPTION
+Site:                     A5131015 Us Middle R Res
+Site Name:                Middle River Upstream Reservoir 
+Data Custodian:           KINRM Kangaroo Island NRMB
+Commence:                 01/02/2013 
+Cease:                     
+Grid Ref: Zone:           53     Easting:              690175.3    Northing:              6043377.2 
+Latitude:                 -35.735246  35°44'06.9"S
+Longitude:                137.102908 137°06'10.5"E
+Position Datum:           GDA94 Geodetic Datum of Australia 1994
+
+STATION DESCRIPTION
+Datum:                    ALD Arbitray Local Datum
+Control:                  X section of proposed weir location 
+CTF Level:                1 
+Max Gauged Stage:         2.808 
+Max Gauge Date:           12/07/2016 
+Regulated ?:              False 
+
+RATING TABLES
+ Var                            Var                         Start       Start
+ From                           To                          Date        Time    Site           Table
+  100.00 Level (m)               140 Discharge (m^3/s)      18/03/2013  00:00   A5131015           1
+  450.00 Water Temp. (Deg.C)     451 EC Temp Corr Factor    19/04/2013  00:00   ECTEMP             1
+  821.00 EC corrected (uS/cm)    800 TDS (mg/L)             19/04/2013  00:00   EC2TDS             1
+
+PERIOD OF RECORD
+Variable                                     Start Date   End Date
+ 100.00 Level (m)            Continuous      19/04/2013 14/10/2018
+ 450.00 Water Temp. (Deg.C)  Continuous      19/04/2013 14/10/2018
+ 816.00 EC uncorrected uS/cm Continuous      19/04/2013 14/10/2018
+ 821.00 EC corrected (uS/cm) Continuous      19/04/2013 14/10/2018
+
+
+</font></pre>
+</body>
+</html>

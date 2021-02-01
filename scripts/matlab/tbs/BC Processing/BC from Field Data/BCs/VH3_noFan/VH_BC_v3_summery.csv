@@ -1,0 +1,30 @@
+Variable,Site
+H,A4261039
+SAL,EPA2014_Coorong_Murray_Mouth
+TEMP,EPA2014_Coorong_Murray_Mouth
+TRACE_1,No Site
+WQ_TRC_SS1,EPA2014_Coorong_Murray_Mouth
+WQ_TRC_RET,No Site
+WQ_OXY_OXY,EPA2014_Coorong_Murray_Mouth
+WQ_CAR_DIC,EPA2014_Coorong_Murray_Mouth
+WQ_CAR_PH,EPA2014_Coorong_Murray_Mouth
+WQ_CAR_CH4,No Site
+WQ_SIL_RSI,EPA2014_Coorong_Murray_Mouth
+WQ_NIT_AMM,EPA2014_Coorong_Murray_Mouth
+WQ_NIT_NIT,EPA2014_Coorong_Murray_Mouth
+WQ_NIT_N2O,No Site
+WQ_PHS_FRP,EPA2014_Coorong_Murray_Mouth
+WQ_PHS_FRP_ADS,EPA_Mouth
+WQ_OGM_DOC,EPA2014_Lake_Alexandrina_Goolwa_Barrage_Upstream
+WQ_OGM_POC,No Site
+WQ_OGM_DON,EPA_Mouth
+WQ_OGM_PON,EPA_Mouth
+WQ_OGM_DOP,EPA_Mouth
+WQ_OGM_POP,EPA_Mouth
+WQ_PHY_GRN,EPA_Mouth
+WQ_ZOO_GRAZER,No Site
+WQ_GEO_PE,No Site
+WQ_GEO_UBALCHG,No Site
+WQ_LND_TRACER,No Site
+WQ_SBG_TRACER,No Site
+WQ_SBG_DOM_LEACHATE,No Site

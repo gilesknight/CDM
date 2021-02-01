@@ -1,0 +1,30 @@
+Variable,Site
+FLOW,A4261099
+SAL,EPA2014_Currency_Creek_US_of_Narrows
+TEMP,EPA2014_Currency_Creek_US_of_Narrows
+TRACE_1,No Site
+WQ_TRC_SS1,EPA2014_Currency_Creek_US_of_Narrows
+WQ_TRC_RET,No Site
+WQ_OXY_OXY,EPA2014_Currency_Creek_US_of_Narrows
+WQ_CAR_DIC,EPA2014_Currency_Creek_US_of_Narrows
+WQ_CAR_PH,EPA2014_Currency_Creek_US_of_Narrows
+WQ_CAR_CH4,No Site
+WQ_SIL_RSI,EPA2014_Currency_Creek_Currency_2
+WQ_NIT_AMM,EPA2014_Currency_Creek_US_of_Narrows
+WQ_NIT_NIT,EPA2014_Currency_Creek_US_of_Narrows
+WQ_NIT_N2O,No Site
+WQ_PHS_FRP,EPA2014_Currency_Creek_US_of_Narrows
+WQ_PHS_FRP_ADS,EPA2014_Currency_Creek_US_of_Narrows
+WQ_OGM_DOC,EPA2014_Currency_Creek_Currency_1
+WQ_OGM_POC,No Site
+WQ_OGM_DON,EPA2014_Currency_Creek_US_of_Narrows
+WQ_OGM_PON,EPA2014_Currency_Creek_US_of_Narrows
+WQ_OGM_DOP,EPA2014_Currency_Creek_US_of_Narrows
+WQ_OGM_POP,EPA2014_Currency_Creek_US_of_Narrows
+WQ_PHY_GRN,EPA_Currency
+WQ_ZOO_GRAZER,No Site
+WQ_GEO_PE,No Site
+WQ_GEO_UBALCHG,No Site
+WQ_LND_TRACER,No Site
+WQ_SBG_TRACER,No Site
+WQ_SBG_DOM_LEACHATE,No Site

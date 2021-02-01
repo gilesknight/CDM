@@ -1,0 +1,14 @@
+Stations:9746,9225,9091,9977,9976,24003,24533,24533,24536,96033,74081,75039,41509
+Stations: Name	Witchcliffe,Perth Metro,Melvile Waters,Mandurah,Pinjarra South,Renmark,Mannum,Murray Bridge,Tailem Bend,Liawenee,Mulwala,Lake Cargelligo Airport,Traighli
+Element:	Wind Speed,Wind Direction,Air Temp.,Rel. Humidity,Solar Rad,Cloud Cover,Rainfall	
+Frequency:	30 min												
+Start Date:	1/01/2000												
+End Date:	Current												
+													
+													
+Stations:9021,9746											
+Stations Name:	Perth Airport,Forest Grove											
+Element:	Wind Speed,Wind Direction,Air Temp.,Rel. Humidity,Solar Rad,Cloud Cover,Rainfall	
+Frequency:	30 min												
+Start Date:	1/01/1970												
+End Date:	Current												
