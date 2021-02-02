@@ -1,0 +1,57 @@
+
+
+Manual Outline:
+
+Title: Coorong Dynamics Model
+
+Welcome
+
+Contributing to the project
+
+Introduction
+
+	Importance of the Coorong
+	Ecological Character Description
+	Management challenges
+	Prior modelling 
+	Aims and Scope
+
+The Coorong Dynamics Model
+	
+	Model platform
+	Overview of available data
+	
+Lagoon Hydrodynamics 
+  Overview
+  TUFLOW-FV overview
+  Model mesh options and domain extent
+  Boundary condition inputs
+  Bottom roughness
+  Model settings
+  Validation
+
+Lagoon Water Quality 
+  Overview
+  AED overview
+  Module configuration : Water quality
+  Module configuration : Sediment
+  Boundary data specification
+  Validation
+
+Lagoon Habitat
+  Overview
+  AED overview
+  Module configuration : Ruppia
+  Module configuration : Fish
+  Module configuration : Birds
+  Validation and Assessment
+
+Scenarios
+
+Conclusion
+
+References
+
+
+
+
